@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Document</title>
-</head>
-<header>
-    <nav id="header" class="navbar navbar-expand-lg navbar-#FFF5E1">
-        <div class="container-fluid">
-        <!---Hamburguesa-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+document.getElementById("headerp1").innerHTML = `
+<nav class="navbar navbar-expand-lg navbar-#FFF5E1">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <!-- Menú izquierda -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PASTELERIA MIL SABORES</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -44,11 +28,12 @@
                             <li><a class="dropdown-item" href="#">Productos Veganas </a></li>
                             <li><a class="dropdown-item" href="#">Tortas Especiales </a></li>
                         </ul>
+                    </li>
+                </ul>
 
-                    </li>
-                    <li>
-                        <img class="img-fluid headerimg rounded-pill" src="assets/img/logoPNG.png" alt="logoPNG">
-                    </li>
+                <!-- Menú derecha -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row">
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sucursales</a>
                     </li>
@@ -68,43 +53,19 @@
                     </li>
 
                 </ul>
+
+                <!-- LOGO centrado que sobresale -->
+                <div class="logo-container"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background-color:#F9C8D2; border-radius:50%; padding:10px;">
+                    <img src="assets/img/logoPNG.png" alt="Logo" style="height:100px; width:auto;">
+                </div>
+
             </div>
-        </div>
-    </nav>
-
-
-
-
-    <div id="container1" class="navbar navbar-expand-lg navbar-#FFF5E1">
-        <div class="navbar-nav ms-auto">
+                 <!-- Login / Registro debajo o en la esquina -->
+        <div id="container1" class="nav-item ">
             <a class="nav-link" href="login.html">Login</a>
-            <a class="nav-link" href="">Registarse</a>
+            <a class="nav-link" href="#">Registrarse</a>
         </div>
-    </div>
-
-
-</header>
-
-<div class="container_all"></div>
-<div class="container_info">
-    <h1>Build Your</h1>
-    <h2>Bussines</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, iste expedita recusandae labore sed totam vel
-        dolore voluptates ducimus, asperiores vitae. Nulla voluptatibus rerum, reiciendis quam quo enim maxime maiores.
-    </p>
-    <input type="button" value="Get Started">
-
-    <div class="container_vector"></div>
-
-
-</div>
-
-<body>
-
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-
-</html>
+        </nav>
+    
+ `;

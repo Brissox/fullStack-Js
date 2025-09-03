@@ -18,7 +18,12 @@
     src: url(/workspaces/fullStack-Js/assets/fonts/Pacifico/Pacifico-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
-
+}
+@font-face {
+    font-family: "lato", sans-serif;
+    src: url(/workspaces/fullStack-Js/assets\fonts\Lato\Lato-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer {
@@ -37,8 +42,9 @@ header{
     padding: 10px;             /* espacio interno */
     font-family: 'Pacific'; /* fuente personalizada */
     color: #5D4037;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    display: flex;
 
  
 }
@@ -50,15 +56,41 @@ header{
     margin-right: 10px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
 
 .wave {
     position: relative;
     top:-5px;
 }
 
-@media(max-width:700px)
 
+ .container1{
+        height: 20px;
+        flex-wrap: wrap; /*no se acumulan, bajan al achicar la pagina*/
+        justify-content: flex-end; /*ubicacion del contenido*/
+        align-items: end;
+        gap: 10px;
+        border-right-width: 20px;
+        
+    }
 
+body{
+    display: flex;
+    background-color: #FFF5E1 ;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    font-family: "lato",sans-serif; /* fuente personalizada */
+    color:  #5D4037
+}
+        .texto-secundario {
+            color: #B0BEC5; /* Texto secundario */
+        }
+
+        h1, h2, h3 {
+            color: #5D4037; /* Asegura que títulos también sean marrón oscuro */
+        }
